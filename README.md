@@ -110,8 +110,6 @@ http://localhost:3000
 
 Desenvolvido por **Ítalo Nunes Pereira**.
 
-Se quiser contribuir, melhorar ou adicionar novas funcionalidades, fique à vontade para abrir um PR ou Issue.
-
 ---
 
 ## 📄 Licença
