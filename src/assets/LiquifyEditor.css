@@ -1,0 +1,180 @@
+/* ============================= */
+/*   LAYOUT GERAL               */
+/* ============================= */
+
+.liquify-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: #aaa7a7;
+  color: #eee;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* ============================= */
+/*   SIDEBAR                     */
+/* ============================= */
+
+.liquify-sidebar {
+  width: 300px;
+  background: #508b96;
+  border-right: 1px solid #2b2b2b;
+  padding: 25px 22px;
+  overflow-y: auto;
+  box-shadow: 4px 0 20px rgba(156, 155, 155, 0.25);
+}
+
+.liquify-sidebar h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+/* Labels */
+.liquify-sidebar label {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+/* ============================= */
+/*   SLIDERS                     */
+/* ============================= */
+
+.liquify-sidebar input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: #333;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.liquify-sidebar input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #0d6efd;
+  border-radius: 50%;
+  cursor: grab;
+  border: 2px solid #fff;
+}
+
+.liquify-sidebar input[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+
+/* ============================= */
+/*   BOTÕES                       */
+/* ============================= */
+
+.liquify-sidebar .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn-warning {
+  background: #e0a800;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background: #cf9700;
+}
+
+.btn-primary {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+}
+
+.btn-success {
+  background: #198754;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background: #157347;
+}
+
+.btn-dark {
+  background: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #23272b;
+}
+
+/* Input de upload */
+.liquify-sidebar input[type="file"] {
+  display: none;
+}
+
+/* ============================= */
+/*   ÁREA DE TRABALHO            */
+/* ============================= */
+
+.liquify-workspace {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #949393;
+  overflow: auto;
+  position: relative;
+}
+
+/* Canvas */
+.liquify-canvas {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 8px;
+  background: #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+}
+
+/* ============================= */
+/*   BRUSH PREVIEW (OPCIONAL)    */
+/* ============================= */
+
+.brush-circle {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.magnifier {
+  position: fixed;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 18px rgba(0,0,0,0.6);
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.split-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: rgba(255,255,255,0.9);
+}

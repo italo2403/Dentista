@@ -1,0 +1,40 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.workspace {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6e6e6;
+  position: relative;
+  overflow: hidden;
+}
+
+.canvas {
+  max-width: 90%;
+  max-height: 90%;
+  background: white;
+  border: 1px solid #999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transform-origin: top left;
+}
+
+.brush {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.5);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
