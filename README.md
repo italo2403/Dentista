@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🦷 Dentista – Sistema Simples em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém um sistema odontológico extremamente simples desenvolvido em **React**, com duas telas principais:
 
-## Available Scripts
+* **face.js** → Editor facial simples (upload + visualização)
+* **dente.js** → Editor de dentes simples (upload + visualização)
 
-In the project directory, you can run:
+O objetivo deste projeto é servir como base para futuros aprimoramentos, como liquify odontológico, IA para segmentação de dentes, suavização, antes/depois, ferramentas de ortodontia e muito mais.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Estrutura do Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+src/
+ ├─ App.js        → Menu principal com duas opções
+ ├─ face.js       → Tela de edição facial
+ ├─ dente.js      → Tela de edição dentária
+ ├─ styles.css    → Estilos globais simples
+ └─ index.js      → Ponto de entrada do React
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Funcionalidades Atuais
 
-### `npm run build`
+### ✔ Menu inicial simples
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Permite escolher entre **FACE** e **DENTE**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ✔ Upload de imagem
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ambas as telas permitem fazer upload de uma imagem.
 
-### `npm run eject`
+### ✔ Pré-visualização imediata
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A imagem carregada aparece no tamanho máximo disponível.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✔ Design minimalista
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Interface leve e funcional, pensada para evoluir.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠️ Tecnologias Utilizadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* **React.js** (Vite ou CRA)
+* **JavaScript**
+* **CSS simples**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Não há backend envolvido neste projeto.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📦 Como Rodar o Projeto
 
-### Analyzing the Bundle Size
+1. Clone o repositório:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+git clone https://github.com/italo2403/Dentista.git
+```
 
-### Making a Progressive Web App
+2. Entre na pasta:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+cd Dentista
+```
 
-### Advanced Configuration
+3. Instale as dependências:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm install
+```
 
-### Deployment
+4. Rode o projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+npm start
+```
 
-### `npm run build` fails to minify
+O sistema será acessível em:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+http://localhost:3000
+```
+
+---
+
+## 📌 Próximos Passos (Roadmap)
+
+### 🔧 Melhorias previstas
+
+* Adicionar **Liquify Odontológico**
+* Implementar **máscara IA** via ONNX Runtime
+* Criar **ferramentas odontológicas** (bloat, pinch, edge-protect)
+* Interface profissional estilo **Photoshop Liquify**
+* Edição responsiva para **celular**
+
+### 🧠 Possíveis módulos futuros
+
+* Editor facial avançado
+* Análise de sorriso
+* Ajuste de linha gengival
+* Medidas odontológicas
+* Comparação antes/depois
+
+---
+
+## 👨‍⚕️ Autor
+
+Desenvolvido por **Ítalo Nunes Pereira**.
+
+Se quiser contribuir, melhorar ou adicionar novas funcionalidades, fique à vontade para abrir um PR ou Issue.
+
+---
+
+## 📄 Licença
+
+Este software é distribuído sob uma **Licença Proprietária Restrita**, com todos os direitos reservados.
+
+### 🔒 Termos de Uso
+
+* O código, design, interface, lógica e qualquer parte deste projeto **não podem ser copiados, modificados, redistribuídos, publicados ou reutilizados** sem autorização expressa por escrito do autor.
+* É proibida a utilização para fins comerciais sem contrato ou licença válida.
+* É proibido revender, sublicenciar ou incorporar este software em outros produtos, pagos ou gratuitos.
+* O comprador possui direito apenas ao **uso final**, sem acesso a direitos de propriedade intelectual.
+
+### © Direitos Autorais
+
+Todo o conteúdo deste projeto é de propriedade intelectual de **Ítalo Nunes Pereira**. Todos os direitos são reservados.
+
+Para solicitações de licença, contato comercial ou uso ampliado, entre em contato diretamente com o autor.
